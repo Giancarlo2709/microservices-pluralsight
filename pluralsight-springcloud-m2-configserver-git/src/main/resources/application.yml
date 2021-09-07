@@ -2,9 +2,15 @@
 server:
   port: 8888
 spring:
+  security:
+    user:
+      name: pluralsight
+      password: pluralsight
   cloud:
     config:
       server:
+        encrypt:
+          enabled: false
         git:
           uri: https://github.com/Giancarlo2709/pluralsight-spring-cloudconfig-wa-tolls
           #username: uname
