@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: your_clientid
+            clientSecret: your_clientsecret
+            scope:
+            - user:email
+            - read:user
+
+
